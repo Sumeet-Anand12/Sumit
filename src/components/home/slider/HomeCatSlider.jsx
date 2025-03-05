@@ -201,7 +201,7 @@ const HomeCatSlider = () => {
                
                
             </Swiper>
-            category
+           Sumit Anand
         </div>
     )
 }
