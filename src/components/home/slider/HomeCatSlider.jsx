@@ -5,26 +5,203 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import { Navigation } from 'swiper/modules';
 import "./homeCat.css"
+import iphone from "../../../assets/Image/Product/iphone-blue.jpg"
+import { NavLink } from 'react-router-dom';
 
 const HomeCatSlider = () => {
     return (
         <div className='container-fluid'>
-            <Swiper spaceBetween={50}
+            <Swiper spaceBetween={40}
                 slidesPerView={6}
                 navigation={true}
                 modules={[Navigation]}
-                className="mySwiper">
-                <SwiperSlide>Slide 1</SwiperSlide>
-                <SwiperSlide>Slide 2</SwiperSlide>
-                <SwiperSlide>Slide 3</SwiperSlide>
-                <SwiperSlide>Slide 4</SwiperSlide>
-                <SwiperSlide>Slide 5</SwiperSlide>
-                <SwiperSlide>Slide 6</SwiperSlide>
-                <SwiperSlide>Slide 7</SwiperSlide>
-                <SwiperSlide>Slide 8</SwiperSlide>
-                <SwiperSlide>Slide 9</SwiperSlide>
+                breakpoints={{
+                    640: {
+                      slidesPerView: 2,
+                      spaceBetween: 20,
+                    },
+                    768: {
+                      slidesPerView: 4,
+                      spaceBetween: 40,
+                    },
+                    1024: {
+                      slidesPerView: 5,
+                      spaceBetween: 50,
+                    },
+                  }}
+                className="mySwiper homeCat-wrapper">
+                <SwiperSlide>
+                    <NavLink to={""} className="text-decoration-none ">
+                        <div className='homeCat'>
+                            <img src={iphone} alt="" />
+                            <span className='text-black'>Smart Talets</span>
+                        </div>
+                        <div className='home-cat-sapan'>
+
+                        </div>
+
+                    </NavLink>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <NavLink to={""} className="text-decoration-none ">
+                        <div className='homeCat'>
+                            <img src={iphone} alt="" />
+                            <span className='text-black'>Smart Talets</span>
+                        </div>
+                        <div className='home-cat-sapan'>
+
+                        </div>
+
+                    </NavLink>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <NavLink to={""} className="text-decoration-none ">
+                        <div className='homeCat'>
+                            <img src={iphone} alt="" />
+                            <span className='text-black'>Smart Talets</span>
+                        </div>
+                        <div className='home-cat-sapan'>
+
+                        </div>
+
+                    </NavLink>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <NavLink to={""} className="text-decoration-none ">
+                        <div className='homeCat'>
+                            <img src={iphone} alt="" />
+                            <span className='text-black'>Smart Talets</span>
+                        </div>
+                        <div className='home-cat-sapan'>
+
+                        </div>
+
+                    </NavLink>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <NavLink to={""} className="text-decoration-none ">
+                        <div className='homeCat'>
+                            <img src={iphone} alt="" />
+                            <span className='text-black'>Smart Talets</span>
+                        </div>
+                        <div className='home-cat-sapan'>
+
+                        </div>
+
+                    </NavLink>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <NavLink to={""} className="text-decoration-none ">
+                        <div className='homeCat'>
+                            <img src={iphone} alt="" />
+                            <span className='text-black'>Smart Talets</span>
+                        </div>
+                        <div className='home-cat-sapan'>
+
+                        </div>
+
+                    </NavLink>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <NavLink to={""} className="text-decoration-none ">
+                        <div className='homeCat'>
+                            <img src={iphone} alt="" />
+                            <span className='text-black'>Smart Talets</span>
+                        </div>
+                        <div className='home-cat-sapan'>
+
+                        </div>
+
+                    </NavLink>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <NavLink to={""} className="text-decoration-none ">
+                        <div className='homeCat'>
+                            <img src={iphone} alt="" />
+                            <span className='text-black'>Smart Talets</span>
+                        </div>
+                        <div className='home-cat-sapan'>
+
+                        </div>
+
+                    </NavLink>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <NavLink to={""} className="text-decoration-none ">
+                        <div className='homeCat'>
+                            <img src={iphone} alt="" />
+                            <span className='text-black'>Smart Talets</span>
+                        </div>
+                        <div className='home-cat-sapan'>
+
+                        </div>
+
+                    </NavLink>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <NavLink to={""} className="text-decoration-none ">
+                        <div className='homeCat'>
+                            <img src={iphone} alt="" />
+                            <span className='text-black'>Smart Talets</span>
+                        </div>
+                        <div className='home-cat-sapan'>
+
+                        </div>
+
+                    </NavLink>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <NavLink to={""} className="text-decoration-none ">
+                        <div className='homeCat'>
+                            <img src={iphone} alt="" />
+                            <span className='text-black'>Smart Talets</span>
+                        </div>
+                        <div className='home-cat-sapan'>
+
+                        </div>
+
+                    </NavLink>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <NavLink to={""} className="text-decoration-none ">
+                        <div className='homeCat'>
+                            <img src={iphone} alt="" />
+                            <span className='text-black'>Smart Talets</span>
+                        </div>
+                        <div className='home-cat-sapan'>
+
+                        </div>
+
+                    </NavLink>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <NavLink to={""} className="text-decoration-none ">
+                        <div className='homeCat'>
+                            <img src={iphone} alt="" />
+                            <span className='text-black'>Smart Talets</span>
+                        </div>
+                        <div className='home-cat-sapan'>
+
+                        </div>
+
+                    </NavLink>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <NavLink to={""} className="text-decoration-none ">
+                        <div className='homeCat'>
+                            <img src={iphone} alt="" />
+                            <span className='text-black'>Smart Talets</span>
+                        </div>
+                        <div className='home-cat-sapan'>
+
+                        </div>
+
+                    </NavLink>
+                </SwiperSlide>
+               
+               
             </Swiper>
-              category
+            category
         </div>
     )
 }

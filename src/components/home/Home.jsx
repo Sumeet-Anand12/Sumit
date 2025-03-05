@@ -10,9 +10,8 @@ const HomePage = () => {
       <div className='home-page'>
         <Rotation />
         <Banner />
-
-      </div>
         <HomeCatSlider />
+      </div>
     </div>
   )
 }
