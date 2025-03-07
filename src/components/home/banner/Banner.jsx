@@ -30,7 +30,7 @@ const Banner = () => {
     return (
 
         <div className='container-fluid'>
-            <div className='row banner'>
+            <div className='row banner pt-4'>
                 {/* For all screen sizes, use col-12 */}
                 <div className='col-12 col-lg-9'>
                     <Swiper
@@ -42,32 +42,39 @@ const Banner = () => {
                         className="mySwiper my-banner"
                     >
                         <SwiperSlide>
-                            <img src={baner1} alt="" />
-                            <div className={`banner-content ${activeSlide === 0 ? 'banner-content-active' : ''}`}>
-                                <span>Big Saving Days Sale</span>
-                                <div className='content'>
-                                    <h2>Women Solid Round Green T-Shirt</h2>
-                                    <li>
-                                        <span>Starting At Only</span>
-                                        <span>$59.00</span>
-                                    </li>
-                                    <button className='content-btn btn btn-danger px-4 py-2 text-uppercase'>Shop Now</button>
+                            {/* <div >
+
+                            </div> */}
+                            {/* <img src={baner1} alt="" /> */}
+                            <div className={` banner-img `}>
+                                <div className={` banner-content ${activeSlide === 0 ? 'banner-content-active' : ''}`}>
+                                    <span>Big Saving Days Sale</span>
+                                    <div className='content' >
+                                        <h2>Women Solid Round Green T-Shirt</h2>
+                                        <li>
+                                            <span>Starting At Only</span>
+                                            <span>$59.00</span>
+                                        </li>
+                                        <button className='content-btn btn btn-danger px-4 py-2 text-uppercase'>Shop Now</button>
+                                    </div>
                                 </div>
                             </div>
                         </SwiperSlide>
                         <SwiperSlide>
-                            <img src={baner2} alt="" />
-                            <div className={`banner-content ${activeSlide === 1 ? 'banner-content-active' : ''}`}>
-                                <span>Big Saving Days Sale</span>
-                                <div className='content'>
-                                    <h2>Buy Modern Chair In Black Color</h2>
-                                    <li>
-                                        <span>Starting At Only</span>
-                                        <span>$99.00</span>
-                                    </li>
-                                    <button className='content-btn btn btn-danger px-4 py-2 text-uppercase'>Shop Now</button>
+                            <div className={`banner-img2`}>
+                                <div className={`banner-content ${activeSlide === 1 ? 'banner-content-active' : ''}`}>
+                                    <span>Big Saving Days Sale</span>
+                                    <div className='content'>
+                                        <h2>Buy Modern Chair In Black Color</h2>
+                                        <li>
+                                            <span>Starting At Only</span>
+                                            <span>$99.00</span>
+                                        </li>
+                                        <button className='content-btn btn btn-danger px-4 py-2 text-uppercase'>Shop Now</button>
+                                    </div>
                                 </div>
                             </div>
+
                         </SwiperSlide>
                     </Swiper>
                 </div>
