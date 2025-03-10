@@ -1,6 +1,5 @@
 import React from 'react'
 import van from "../../../assets/Image/Banner/vanDownload.svg"
-
 import BannerCard from './BannerCard'
 const CardBanner = () => {
     return (
@@ -22,7 +21,11 @@ const CardBanner = () => {
 
                         </div>
                         <div className='col col-lg-3 d-flex justify-content-center align-items-center '>
-                            <h1>- Only $200</h1>
+
+                          
+
+                          <h1>- Only $200</h1>
+
                         </div>
 
                     </div>
@@ -55,9 +58,10 @@ const CardBanner = () => {
                     </div>
 
                 </div>
-            </section>
+            </section>     
 
-          
+      Card banner
+            </div>
 
 
 
