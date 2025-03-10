@@ -26,44 +26,45 @@ const Navbar = () => {
 
    return (
       <nav>
-         <div className='container-fluid '>
-            <div className='row pb-2'>
-               <div className='hemberg col col-lg-3'>
+         <div>
+            <div className='container-fluid'>
+               <div className='row pb-2'>
+                  <div className='hemberg col col-lg-3'>
 
-                  <Button variant="text" className='text-black ms-2 pe-2' onClick={handleCategory}>  <img src={amberg} alt="" className='me-2' /> SELECT BY CATEGORIES  <IoIosArrowDown className='ms-5' /></Button>
+                     <Button variant="text" className='text-white ms-2 pe-2 pt-3' onClick={handleCategory}>  <img src={amberg} alt="" className='me-2' /> SELECT BY CATEGORIES  <IoIosArrowDown className='ms-5' /></Button>
+                  </div>
+
+                  <ul className=' col col-lg-5 d-flex align-items-center gap-4 justify-content-start pt-2'>
+                     <li>
+                        <NavLink className="text-decoration-none text-light fw-bold" to={"/"}> Home</NavLink>
+                     </li>
+                     <li>
+                        <NavLink className={({ isActive }) =>
+                           isActive ? 'text-decoration-none text-white fw-bold active' : 'text-decoration-none text-white fw-bold'
+                        }
+                           to={"#"}
+                           onMouseEnter={handleDrawer}  // Open drawer on hover
+                        // onMouseLeave={handleDrawer}  
+                        // Close drawer when mouse leaves
+                        > Fashion</NavLink>
+                     </li>
+                     <li>
+                        <NavLink className="text-decoration-none text-white fw-bold" to={"/"}> New Arrivals</NavLink>
+                     </li>
+                     <li>
+                        <NavLink className="text-decoration-none text-white fw-bold" to={"/"}> All Brands</NavLink>
+                     </li>
+                     <li>
+                        <NavLink className="text-decoration-none text-white fw-bold" to={"/"}> Best Deals</NavLink>
+                     </li>
+                     <li>
+                        <NavLink className="text-decoration-none text-white fw-bold" to={"/"}> Blogs</NavLink>
+                     </li>
+                  </ul>
                </div>
-
-               <ul className=' col col-lg-5 d-flex align-items-center gap-4 justify-content-start'>
-                  <li>
-                     <NavLink className="text-decoration-none text-black fw-bold" to={"/"}> Home</NavLink>
-                  </li>
-                  <li>
-                     <NavLink className={({ isActive }) =>
-                        isActive ? 'text-decoration-none text-danger fw-bold active' : 'text-decoration-none text-black fw-bold'
-                     }
-                        to={"#"}
-                        onMouseEnter={handleDrawer}  // Open drawer on hover
-                     // onMouseLeave={handleDrawer}  
-                     // Close drawer when mouse leaves
-                     > Fashion</NavLink>
-                  </li>
-                  <li>
-                     <NavLink className="text-decoration-none text-black fw-bold" to={"/"}> New Arrivals</NavLink>
-                  </li>
-                  <li>
-                     <NavLink className="text-decoration-none text-black fw-bold" to={"/"}> All Brands</NavLink>
-                  </li>
-                  <li>
-                     <NavLink className="text-decoration-none text-black fw-bold" to={"/"}> Best Deals</NavLink>
-                  </li>
-                  <li>
-                     <NavLink className="text-decoration-none text-black fw-bold" to={"/"}> Blogs</NavLink>
-                  </li>
-               </ul>
+               <DropDown state={state} handleDrawer={handleDrawer} />
+               <CategoryPanel openCategoryPanel={openCategoryPanel} handleCategory={handleCategory} />
             </div>
-            <DropDown state={state} handleDrawer={handleDrawer} />
-            <CategoryPanel openCategoryPanel={openCategoryPanel} handleCategory={handleCategory} />
-
          </div>
       </nav>
 

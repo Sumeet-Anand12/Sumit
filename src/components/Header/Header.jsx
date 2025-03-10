@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import TopStrip from './topStrip/TopStrip'
 import logo from '../../assets/Image/Banner/logo.jpg'
 import { NavLink } from "react-router-dom"
@@ -24,6 +24,24 @@ const StyledBadge = styled(Badge)(({ theme }) => ({
 
 
 const Header = () => {
+
+    const [isSticky, setIsSticky] = useState(false);
+
+    const handleScroll = () => {
+        if (window.scrollY > 120) {
+            setIsSticky(true);
+        } else {
+            setIsSticky(false);
+        }
+    };
+
+    useEffect(() => {
+        window.addEventListener('scroll', handleScroll);
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
 
 
     return (
@@ -82,7 +100,7 @@ const Header = () => {
                         </div>
                     </div>
                     <hr />
-                    <div >
+                    <div className={isSticky ? 'sticky-navbar active' : ' Inactive-sticky-navbar'}>
                         <Navbar />
                     </div>
                 </div>

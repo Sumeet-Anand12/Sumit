@@ -4,7 +4,7 @@ import CategoryPanel from './sidebarPanel/CategoryPanel';
 import Banner from './banner/Banner';
 import HomeCatSlider from './slider/HomeCatSlider';
 import CardBanner from './cardbanner/CardBanner';
-
+import CategoryTab from './categoryTab/CategoryTab';
 const HomePage = () => {
   return (
     <div>
@@ -15,6 +15,7 @@ const HomePage = () => {
       </div>
       <div className='home-card-banner'>
         <CardBanner />
+         <CategoryTab />
       </div>
     </div>
   )
