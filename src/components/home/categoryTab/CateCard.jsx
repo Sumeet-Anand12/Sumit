@@ -6,7 +6,7 @@ import { CiShare1 } from "react-icons/ci";
 
 import ToolTip from '../../tooltip/ToolTip';
 
-const CateCard = () => {
+const CateCard = ({img}) => {
 
     const [showIcon, setShowIcon] = useState(false)
 
@@ -24,7 +24,7 @@ const CateCard = () => {
             <div className='card ' onMouseEnter={handleShowIcon} onMouseLeave={handleShowIconLeave}>
                 <div className=' fashion-card'>
                     <div className='fashion-img'>
-                        <img src={"https://www.indianterrain.com/cdn/shop/files/ITPMW00001_White_20Tan_01.jpg?v=1707686613"} alt="" />
+                        <img src={img} alt="" />
 
                         {
                             showIcon && (

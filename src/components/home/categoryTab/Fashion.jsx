@@ -15,37 +15,37 @@ const Fashion = () => {
         className="mySwiper Category-wrapper"
       >
         <SwiperSlide>
-          <CateCard />
+          <CateCard img="https://www.indianterrain.com/cdn/shop/files/ITPMW00001_White_20Tan_01.jpg?v=1707686613" />
         </SwiperSlide>
         <SwiperSlide>
-          <CateCard />
+          <CateCard img="https://www.indianterrain.com/cdn/shop/files/ITPMW00001_White_20Tan_01.jpg?v=1707686613" />
         </SwiperSlide>
         <SwiperSlide>
-          <CateCard />
+          <CateCard img="https://www.indianterrain.com/cdn/shop/files/ITPMW00001_White_20Tan_01.jpg?v=1707686613" />
         </SwiperSlide>
         <SwiperSlide>
-          <CateCard />
+          <CateCard img="https://www.indianterrain.com/cdn/shop/files/ITPMW00001_White_20Tan_01.jpg?v=1707686613" />
         </SwiperSlide>
         <SwiperSlide>
-          <CateCard />
+          <CateCard img="https://www.indianterrain.com/cdn/shop/files/ITPMW00001_White_20Tan_01.jpg?v=1707686613" />
         </SwiperSlide>
         <SwiperSlide>
-          <CateCard />
+          <CateCard img="https://www.indianterrain.com/cdn/shop/files/ITPMW00001_White_20Tan_01.jpg?v=1707686613" />
         </SwiperSlide>
         <SwiperSlide>
-          <CateCard />
+          <CateCard img="https://www.indianterrain.com/cdn/shop/files/ITPMW00001_White_20Tan_01.jpg?v=1707686613" />
         </SwiperSlide>
         <SwiperSlide>
-          <CateCard />
+          <CateCard img="https://www.indianterrain.com/cdn/shop/files/ITPMW00001_White_20Tan_01.jpg?v=1707686613" />
         </SwiperSlide>
         <SwiperSlide>
-          <CateCard />
+          <CateCard img="https://www.indianterrain.com/cdn/shop/files/ITPMW00001_White_20Tan_01.jpg?v=1707686613"/>
         </SwiperSlide>
         <SwiperSlide>
-          <CateCard />
+          <CateCard img="https://www.indianterrain.com/cdn/shop/files/ITPMW00001_White_20Tan_01.jpg?v=1707686613" />
         </SwiperSlide>
         <SwiperSlide>
-          <CateCard />
+          <CateCard  img="https://www.indianterrain.com/cdn/shop/files/ITPMW00001_White_20Tan_01.jpg?v=1707686613" />
         </SwiperSlide>
       </Swiper>
 
