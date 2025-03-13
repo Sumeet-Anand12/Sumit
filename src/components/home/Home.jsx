@@ -5,6 +5,7 @@ import Banner from './banner/Banner';
 import HomeCatSlider from './slider/HomeCatSlider';
 import CardBanner from './cardbanner/CardBanner';
 import CategoryTab from './categoryTab/CategoryTab';
+
 const HomePage = () => {
   return (
     <div>
