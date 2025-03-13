@@ -13,7 +13,6 @@ const CardBanner = () => {
                                 <div className='ps-3'>
                                     <h2 className='text-bold text-uppercase'>Free Shipping</h2>
                                 </div>
-
                             </div>
                         </div>
                         <div className='col-img col-lg-5 d-flex align-items-center'>
@@ -49,11 +48,12 @@ const CardBanner = () => {
                             />
                         </div>
                     </div>
-
                 </div>
+
             </section>
                
             </div>
+
 
     )
 }
