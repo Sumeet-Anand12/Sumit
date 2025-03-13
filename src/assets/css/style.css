@@ -861,6 +861,14 @@ ol {
       color: red;
       
     }
+    /* Add this to your CSS */
+.hover-danger:hover {
+  color: red; /* Bootstrap primary color or any color you want */
+}
+.hover-danger.active {
+  color: red; /* Bootstrap primary color or any color you want */
+}
+
     
 /* End Category Tab */
 /* End Home Page */
