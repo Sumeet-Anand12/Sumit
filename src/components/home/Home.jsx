@@ -5,6 +5,9 @@ import Banner from './banner/Banner';
 import HomeCatSlider from './slider/HomeCatSlider';
 import CardBanner from './cardbanner/CardBanner';
 import CategoryTab from './categoryTab/CategoryTab';
+import LatestProduct from './latestProduct/LatestProduct';
+import BannerCard from './bannerTwo/BannerCard';
+
 
 const HomePage = () => {
   return (
@@ -18,6 +21,8 @@ const HomePage = () => {
         <CardBanner />
          <CategoryTab />
       </div>
+      <LatestProduct />
+      <BannerCard />
     </div>
   )
 }
