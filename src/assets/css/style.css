@@ -989,5 +989,98 @@ ol {
   right: 180px;
   
 }
+
+.card-container > .featuredcard-img
+{
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.9s ease-in-out;
+  background-image: url("../Image/Banner/cms-banner-6.jpg");
+  
+  
+   
+}
+.card-container2 > .featuredcard-img2 {
+ width: 100%;
+ height: 100%;
+ background-repeat: no-repeat;
+ border-radius: 10px;
+ background-size: cover;
+ /* background-position: center; */
+ background-image: url("../Image/Banner/cms-banner-7.jpg");
+ transition: all 0.9s ease-in-out;
+ 
+}
+
+.card-container:hover .featuredcard-img{
+  transform: scale(1.07);
+    cursor: pointer;
+}
+  
+
+.card-container2:hover .featuredcard-img2{
+  transform: scale(1.07);
+    cursor: pointer;
+}
+
+.logo .swiper-button-prev, 
+    .logo .swiper-button-prev, 
+    .swiper-button-next {
+        background-color: #EE3232;
+        width: 32px !important;
+        height: 31px !important;
+        text-transform: none !important;
+        border-radius: 30px;
+        letter-spacing: 0;
+        font-variant: initial;
+        line-height: 1;
+        position: absolute;
+        transform: translateY(8px);
+       
+    }
+    
+    .logo .swiper-button-next {
+        right: 10px !important;
+    }
+    
+    .logo .swiper-button-prev::after,
+    .logo .swiper-button-next::after {
+        font-size: 15px !important;
+        color: #fff;
+        font-weight: 700;
+    }
+  .logo .swiper-slide{
+    padding: 0px 50px !important;
+  }
+
+ /* Initial image styles */
+.logo-component .swiper-slide img {
+  transition: transform 0.8s linear; /* Smooth transition for hover effect */
+}
+
+/* Pendulum keyframes animation */
+@keyframes pendulum {
+  0% {
+    transform: rotate3d(0, 0, 1, -20deg); /* Start rotating counterclockwise */
+  }
+  50% {
+    transform: rotate3d(0, 0, 1, 10deg); /* Rotate clockwise */
+  }
+  100% {
+    transform: rotate3d(0, 0, 1, -15deg); /* Return to counterclockwise */
+  }
+}
+
+/* Hover effect to trigger pendulum animation */
+.logo-component .swiper-slide img:hover {
+  animation: pendulum 1s linear ; /* Apply pendulum animation on hover */
+}
+
+
+
 /* End bannerCard2 */
 /* End Home Page */

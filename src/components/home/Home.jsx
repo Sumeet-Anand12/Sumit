@@ -7,6 +7,9 @@ import CardBanner from './cardbanner/CardBanner';
 import CategoryTab from './categoryTab/CategoryTab';
 import LatestProduct from './latestProduct/LatestProduct';
 import BannerCard from './bannerTwo/BannerCard';
+import FeaturedProduct from './featuredProduct/FeaturedProduct';
+import FeaturedBanner from './bannerTwo/FeaturedBanner';
+import Logo from './logo/Logo';
 
 
 const HomePage = () => {
@@ -23,6 +26,9 @@ const HomePage = () => {
       </div>
       <LatestProduct />
       <BannerCard />
+      <FeaturedProduct />
+      <FeaturedBanner />
+      <Logo />
     </div>
   )
 }
